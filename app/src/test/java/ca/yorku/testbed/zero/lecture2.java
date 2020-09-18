@@ -3,7 +3,7 @@ package ca.yorku.testbed.zero;
 import org.junit.Test;
 import org.w3c.dom.ls.LSOutput;
 
-public class lecture
+public class lecture2
 {
     @Test
     public void ex(){
@@ -27,7 +27,10 @@ public class lecture
         System.out.println(z);
         // Casting a to double fixes the problem
         z = (double) a/b;
-        System.out.println(z);
+        System.out.println("Z = " + z);
+        // However,if we cast a/b with parentheses we get 4.0 again because we casted it after computing a/b
+        double z1 = (double) (a/b);
+        System.out.println("Z1 = " + z1);
     }
 
 }
